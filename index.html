@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Problem 6 - Inventory CRUD (Linked List)</title>
+</head>
+<body>
+ 
+    <h3>Item Management System</h3>
+ 
+    <div>
+<label for="itemName">Item Name:</label>
+<input type="text" id="itemName">
+</div>
+<br>
+<div>
+<label for="quantity">Quantity:</label> 
+<input type="number" id="quantity">
+</div>
+<br>
+<div>
+<label for="price">Price:</label>
+<input type="number" id="price">
+</div>
+<br>
+ 
+    <div id="formActions">
+<button id="submitBtn" onclick="handleSubmit()">Add Item</button>
+</div>
+ 
+    <p id="messageOutput"></p>
+ 
+    <br>
+<h3>Item Records</h3>
+ 
+    <table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th>CTR</th>
+<th>Item Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Total Price</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+<tr>
+<td colspan="6" style="text-align: left;">No item records available.</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="4" style="text-align: right;"><strong>Grand Total</strong></td>
+<td id="grandTotalCell">0</td>
+<td></td>
+</tr>
+</tfoot>
+</table>
+ 
+    <!-- Linked to your try.js file -->
+<script src="ItemNode.js"></script>
+</body>
+</html>
